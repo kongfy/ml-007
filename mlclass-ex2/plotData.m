@@ -12,13 +12,13 @@ figure; hold on;
 %               examples and 'ko' for the negative examples.
 %
 
-
-
-
-
-
-
-
+for i = 1:size(X, 1)
+    if y(i) == 1
+        plot(X(i, 1), X(i, 2), 'k+','LineWidth', 2, 'MarkerSize', 5);
+    else
+        plot(X(i, 1), X(i, 2), 'ko', 'MarkerFaceColor', 'y', 'MarkerSize', 5);
+    end
+end
 
 % =========================================================================
 
